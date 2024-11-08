@@ -1,0 +1,131 @@
+main {
+  background-color: #7a7a7a;
+  background-image: url('./fundo2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .principal {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    button {
+      padding: 0.6rem;
+      font-weight: bold;
+      border-radius: 15px;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+
+      &:hover {
+        background-color: #00fff2;
+      }
+    }
+
+    .resultado {
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid #000;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+      border-radius: 15px;
+      padding: 0.6rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding: 1rem;
+
+    .principal {
+      padding: 1rem;
+      gap: 1rem;
+
+      button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .resultado {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  main {
+    padding: 2rem;
+
+    .principal {
+      padding: 1.5rem;
+      gap: 1.5rem;
+
+      button {
+        padding: 0.55rem;
+        font-size: 1rem;
+      }
+
+      .resultado {
+        padding: 0.55rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  main {
+    padding: 2.5rem;
+
+    .principal {
+      padding: 2rem;
+      gap: 1.5rem;
+
+      button {
+        padding: 0.6rem;
+        font-size: 1.1rem;
+      }
+
+      .resultado {
+        padding: 0.6rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  main {
+    padding: 3rem;
+
+    .principal {
+      padding: 2.5rem;
+      gap: 2rem;
+
+      button {
+        padding: 0.7rem;
+        font-size: 1.2rem;
+      }
+
+      .resultado {
+        padding: 0.7rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
